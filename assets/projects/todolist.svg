@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="TodoList cover">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#15325c"/><stop offset="1" stop-color="#1d6f8b"/></linearGradient></defs>
+  <rect width="1200" height="675" fill="url(#g)"/>
+  <rect x="220" y="150" width="760" height="380" rx="20" fill="#ffffff" opacity="0.12"/>
+  <g stroke="#9fe6ff" stroke-width="10" fill="none">
+    <rect x="290" y="230" width="30" height="30"/><line x1="340" y1="245" x2="800" y2="245"/>
+    <rect x="290" y="300" width="30" height="30"/><line x1="340" y1="315" x2="760" y2="315"/>
+    <rect x="290" y="370" width="30" height="30"/><line x1="340" y1="385" x2="820" y2="385"/>
+    <polyline points="292,302 304,318 328,288" stroke="#ffd692"/>
+    <polyline points="292,372 304,388 328,358" stroke="#ffd692"/>
+  </g>
+  <text x="120" y="120" fill="#eaf7ff" font-size="58" font-family="Arial, sans-serif" font-weight="700">TodoList</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="ContactME cover">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c2740"/><stop offset="1" stop-color="#314d7a"/></linearGradient></defs>
+  <rect width="1200" height="675" fill="url(#g)"/>
+  <rect x="230" y="190" width="740" height="300" rx="18" fill="#ffffff" opacity="0.14"/>
+  <polyline points="250,230 600,430 950,230" fill="none" stroke="#8fe4ff" stroke-width="10"/>
+  <circle cx="920" cy="420" r="70" fill="#ffd298"/>
+  <path d="M890 420 L915 445 L955 395" fill="none" stroke="#6e3f1e" stroke-width="10"/>
+  <text x="120" y="120" fill="#ecf4ff" font-size="58" font-family="Arial, sans-serif" font-weight="700">ContactME</text>
+</svg>

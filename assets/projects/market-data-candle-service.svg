@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Market Data Candle Service cover">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a1f3f"/><stop offset="1" stop-color="#0f4b68"/></linearGradient></defs>
+  <rect width="1200" height="675" fill="url(#g)"/>
+  <g fill="#8ee6ff" opacity="0.9"><rect x="220" y="380" width="34" height="120"/><rect x="280" y="330" width="34" height="170"/><rect x="340" y="410" width="34" height="90"/><rect x="400" y="280" width="34" height="220"/><rect x="460" y="350" width="34" height="150"/></g>
+  <polyline points="180,470 300,360 420,400 540,290 660,330 780,240 920,280" fill="none" stroke="#ffd28f" stroke-width="8"/>
+  <text x="120" y="120" fill="#e8f7ff" font-size="54" font-family="Arial, sans-serif" font-weight="700">Market Data Candle Service</text>
+</svg>
