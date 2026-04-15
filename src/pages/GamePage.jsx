@@ -531,44 +531,31 @@ function bestAiMove(board) {
   const empties = board.map((v, i) => (v ? null : i)).filter((v) => v !== null);
   if (!empties.length) return -1;
 
-  const minimax = (state, isAiTurn, depth) => {
-    const w = winner(state);
-    if (w === 'O') return 10 - depth;
-    if (w === 'X') return depth - 10;
-    if (state.every(Boolean) || depth >= 7) return 0;
+  // Medium AI:
+  // 1) Always take immediate win.
+  // 2) Block immediate player win.
+  // 3) Only sometimes choose strategic squares.
+  // 4) Otherwise pick a random legal square.
+  for (const idx of empties) {
+    const copy = [...board];
+    copy[idx] = 'O';
+    if (winner(copy) === 'O') return idx;
+  }
 
-    const open = state.map((v, i) => (v ? null : i)).filter((v) => v !== null);
-    if (isAiTurn) {
-      let bestScore = -Infinity;
-      for (const idx of open) {
-        const next = [...state];
-        next[idx] = 'O';
-        bestScore = Math.max(bestScore, minimax(next, false, depth + 1));
-      }
-      return bestScore;
-    }
+  for (const idx of empties) {
+    const copy = [...board];
+    copy[idx] = 'X';
+    if (winner(copy) === 'X') return idx;
+  }
 
-    let bestScore = Infinity;
-    for (const idx of open) {
-      const next = [...state];
-      next[idx] = 'X';
-      bestScore = Math.min(bestScore, minimax(next, true, depth + 1));
-    }
-    return bestScore;
-  };
+  const strategicChance = Math.random();
+  if (strategicChance < 0.55) {
+    if (empties.includes(4)) return 4;
+    const corners = empties.filter((i) => [0, 2, 6, 8].includes(i));
+    if (corners.length) return corners[Math.floor(Math.random() * corners.length)];
+  }
 
-  const scoredMoves = empties.map((idx) => {
-    const next = [...board];
-    next[idx] = 'O';
-    return { idx, score: minimax(next, false, 0) };
-  });
-  scoredMoves.sort((a, b) => b.score - a.score);
-
-  const useSmartMove = Math.random() < 0.75;
-  if (useSmartMove) return scoredMoves[0].idx;
-
-  const topTier = scoredMoves.filter((m) => m.score >= scoredMoves[0].score - 1);
-  return topTier[Math.floor(Math.random() * topTier.length)].idx;
+  return empties[Math.floor(Math.random() * empties.length)];
 }
 
 function TicTacToeGame() {
