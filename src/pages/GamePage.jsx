@@ -531,10 +531,10 @@ function bestAiMove(board) {
   const empties = board.map((v, i) => (v ? null : i)).filter((v) => v !== null);
   if (!empties.length) return -1;
 
-  // Medium AI:
+  // Easy-to-medium AI:
   // 1) Always take immediate win.
-  // 2) Block immediate player win.
-  // 3) Only sometimes choose strategic squares.
+  // 2) Usually (not always) block immediate player win.
+  // 3) Sometimes choose strategic squares.
   // 4) Otherwise pick a random legal square.
   for (const idx of empties) {
     const copy = [...board];
@@ -542,14 +542,17 @@ function bestAiMove(board) {
     if (winner(copy) === 'O') return idx;
   }
 
-  for (const idx of empties) {
-    const copy = [...board];
-    copy[idx] = 'X';
-    if (winner(copy) === 'X') return idx;
+  const shouldBlock = Math.random() < 0.8;
+  if (shouldBlock) {
+    for (const idx of empties) {
+      const copy = [...board];
+      copy[idx] = 'X';
+      if (winner(copy) === 'X') return idx;
+    }
   }
 
   const strategicChance = Math.random();
-  if (strategicChance < 0.55) {
+  if (strategicChance < 0.35) {
     if (empties.includes(4)) return 4;
     const corners = empties.filter((i) => [0, 2, 6, 8].includes(i));
     if (corners.length) return corners[Math.floor(Math.random() * corners.length)];
