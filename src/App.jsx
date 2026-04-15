@@ -15,8 +15,8 @@ const applyTheme = (mode, btn) => {
   if (btn) {
     const icon = btn.querySelector('.theme-icon');
     const label = btn.querySelector('.theme-label');
-    if (icon) icon.textContent = mode === 'light' ? '☀️' : '🌙';
-    if (label) label.textContent = mode === 'light' ? 'Day' : 'Night';
+    if (icon) icon.textContent = mode === 'light' ? '🌙' : '☀️';
+    if (label) label.textContent = mode === 'light' ? 'Night' : 'Day';
     btn.setAttribute('title', mode === 'light' ? 'Switch to night mode' : 'Switch to day mode');
   }
 };
