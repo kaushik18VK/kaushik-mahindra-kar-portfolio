@@ -36,6 +36,7 @@ export default function Header() {
         <NavLink to="/experience" onClick={closeMenu}>Experience</NavLink>
         <NavLink to="/projects" onClick={closeMenu}>Projects</NavLink>
         <NavLink to="/skills" onClick={closeMenu}>Skills</NavLink>
+        <NavLink to="/game" onClick={closeMenu}>Game</NavLink>
         <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
       </nav>
       <div className="header-cta">

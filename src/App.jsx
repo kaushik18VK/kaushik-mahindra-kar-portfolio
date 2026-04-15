@@ -2,12 +2,14 @@ import { useEffect } from 'react';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import GameLauncher from './components/GameLauncher';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ExperiencePage from './pages/ExperiencePage';
 import ProjectsPage from './pages/ProjectsPage';
 import SkillsPage from './pages/SkillsPage';
 import ContactPage from './pages/ContactPage';
+import GamePage from './pages/GamePage';
 
 const applyTheme = (mode, btn) => {
   if (mode === 'light') document.body.setAttribute('data-theme', 'light');
@@ -225,8 +227,10 @@ export default function App() {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/skills" element={<SkillsPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/game" element={<GamePage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      <GameLauncher />
       <Footer />
     </>
   );
