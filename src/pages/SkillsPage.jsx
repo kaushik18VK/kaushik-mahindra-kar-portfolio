@@ -6,8 +6,8 @@ export default function SkillsPage() {
     <main>
       <section className="card section reveal page-hero">
         <p className="pill">Skills</p>
-        <h1>Core Stack (Backend + Frontend)</h1>
-        <p>Compact visual skill map with the technologies I use to ship production-ready full-stack applications.</p>
+        <h1>Core Stack (Backend + Frontend + GenAI)</h1>
+        <p>Compact skill map of the technologies I use to deliver production-ready full-stack and GenAI-enabled applications.</p>
       </section>
 
       <section className="section reveal skill-sections">
@@ -20,7 +20,7 @@ export default function SkillsPage() {
             <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js icon" loading="lazy" /><span>Node.js</span></div>
             <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express icon" loading="lazy" /><span>Express.js</span></div>
             <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka icon" loading="lazy" /><span>Kafka</span></div>
-            <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL icon" loading="lazy" /><span>GraphQL</span></div>
+            <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go icon" loading="lazy" /><span>Go</span></div>
             <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI icon" loading="lazy" /><span>FastAPI</span></div>
           </div>
         </article>
@@ -43,11 +43,13 @@ export default function SkillsPage() {
           <h2>Cloud and DevOps</h2>
           <div className="skill-icon-grid">
             <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS icon" loading="lazy" /><span>AWS</span></div>
+            <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure icon" loading="lazy" /><span>Azure</span></div>
+            <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="OCI icon" loading="lazy" /><span>OCI</span></div>
             <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker icon" loading="lazy" /><span>Docker</span></div>
             <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes icon" loading="lazy" /><span>Kubernetes</span></div>
             <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins icon" loading="lazy" /><span>Jenkins</span></div>
             <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Actions icon" loading="lazy" /><span>GitHub Actions</span></div>
-            <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git icon" loading="lazy" /><span>Git / GitOps</span></div>
+            <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform icon" loading="lazy" /><span>Terraform</span></div>
           </div>
         </article>
 
@@ -60,6 +62,36 @@ export default function SkillsPage() {
             <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis icon" loading="lazy" /><span>Redis</span></div>
             <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle icon" loading="lazy" /><span>Oracle DB</span></div>
             <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQL icon" loading="lazy" /><span>SQL</span></div>
+            <div className="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" alt="Vector and search database icon" loading="lazy" /><span>Vector DB / Semantic Search</span></div>
+          </div>
+        </article>
+
+        <article className="card skill-category">
+          <h2>AI and GenAI Engineering</h2>
+          <p>Applied AI capabilities I use to build practical, production-ready intelligence into full-stack products.</p>
+          <div className="skill-icon-grid">
+            <div className="skill-item"><img src="/assets/ai-icons/openai.svg" alt="OpenAI icon" loading="lazy" /><span>OpenAI API</span></div>
+            <div className="skill-item"><img src="/assets/ai-icons/prompt.svg" alt="Prompt engineering icon" loading="lazy" /><span>Prompt Engineering</span></div>
+            <div className="skill-item"><img src="/assets/ai-icons/rag.svg" alt="RAG icon" loading="lazy" /><span>RAG</span></div>
+            <div className="skill-item"><img src="/assets/ai-icons/llm.svg" alt="LLM orchestration icon" loading="lazy" /><span>LLM Orchestration</span></div>
+            <div className="skill-item"><img src="/assets/ai-icons/agents.svg" alt="AI agents icon" loading="lazy" /><span>AI Agents</span></div>
+            <div className="skill-item"><img src="/assets/ai-icons/eval.svg" alt="Model evaluation icon" loading="lazy" /><span>Model Evaluation</span></div>
+            <div className="skill-item"><img src="/assets/ai-icons/embeddings.svg" alt="Embeddings icon" loading="lazy" /><span>Embeddings</span></div>
+            <div className="skill-item"><img src="/assets/ai-icons/mcp.svg" alt="MCP integrations icon" loading="lazy" /><span>MCP Integrations</span></div>
+          </div>
+        </article>
+
+        <article className="card skill-category">
+          <h2>AI Delivery Points</h2>
+          <div className="skill-icon-grid">
+            <div className="skill-item"><img src="/assets/ai-icons/assistant.svg" alt="Assistant features icon" loading="lazy" /><span>AI Assistant Features</span></div>
+            <div className="skill-item"><img src="/assets/ai-icons/context.svg" alt="Prompt design icon" loading="lazy" /><span>Contextual Prompt Design</span></div>
+            <div className="skill-item"><img src="/assets/ai-icons/semantic.svg" alt="Semantic retrieval icon" loading="lazy" /><span>Semantic Retrieval</span></div>
+            <div className="skill-item"><img src="/assets/ai-icons/grounded.svg" alt="Grounded workflow icon" loading="lazy" /><span>Grounded Workflows</span></div>
+            <div className="skill-item"><img src="/assets/ai-icons/iteration.svg" alt="Evaluation iteration icon" loading="lazy" /><span>Evaluation Iteration</span></div>
+            <div className="skill-item"><img src="/assets/ai-icons/secure.svg" alt="Secure integrations icon" loading="lazy" /><span>Secure LLM Integrations</span></div>
+            <div className="skill-item"><img src="/assets/ai-icons/cost.svg" alt="Cost optimization icon" loading="lazy" /><span>Performance &amp; Cost</span></div>
+            <div className="skill-item"><img src="/assets/ai-icons/monitor.svg" alt="Production monitoring icon" loading="lazy" /><span>AI Monitoring</span></div>
           </div>
         </article>
 

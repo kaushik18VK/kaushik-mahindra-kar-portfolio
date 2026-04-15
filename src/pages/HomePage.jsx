@@ -7,17 +7,17 @@ export default function HomePage() {
         <div className="ref-hero-grid">
           <div className="ref-hero-content">
             <p className="hero-name">Kaushik Mahindra Kar</p>
-            <h1>Software Development Engineer building <span>full-stack</span> products that scale</h1>
+            <h1>Full-Stack &amp; <span>AI Engineer</span> building products that scale</h1>
             <p>
-              I design and deliver high-performance backend services and modern frontend experiences
-              with strong reliability, security, and user-focused quality.
+              I design and deliver high-performance backend services, modern frontend experiences,
+              and GenAI-powered features with strong reliability, security, and product-focused quality.
             </p>
             <div className="ref-actions">
               <Link className="btn btn-solid" to="/contact">Start a conversation</Link>
               <Link className="btn btn-outline" to="/projects">Explore projects</Link>
             </div>
             <div className="ref-facts">
-              <span><i />Open to full-stack roles</span>
+              <span><i />Open to Full-Stack and AI roles</span>
               <span>Based in San Jose, California</span>
               <span>Response within 24h</span>
             </div>
@@ -26,7 +26,7 @@ export default function HomePage() {
             <img src="/assets/profile/kaushik-mahindra-kar-web.png" alt="Kaushik Mahindra Kar graduation portrait" className="profile-photo" />
             <div className="profile-meta">
               <h3>Kaushik Mahindra Kar</h3>
-              <p>Software Development Engineer</p>
+              <p>Full-Stack &amp; AI Engineer</p>
             </div>
           </aside>
         </div>
@@ -42,9 +42,18 @@ export default function HomePage() {
           <p>React, Next.js, TypeScript, and modern UI architecture for fast, responsive product experiences.</p>
         </article>
         <article className="ref-card">
-          <h3>Delivery and Reliability</h3>
-          <p>CI/CD automation, performance optimization, and production operations focused on measurable outcomes.</p>
+          <h3>AI and GenAI Engineering</h3>
+          <p>LLM integration, prompt engineering, RAG workflows, and AI-assisted product features for real user impact.</p>
         </article>
+      </section>
+
+      <section className="section card reveal">
+        <h2>AI Focus Areas</h2>
+        <div className="chips">
+          <span>GenAI Product Features</span><span>RAG Pipelines</span><span>Prompt Engineering</span>
+          <span>AI Agents</span><span>Embeddings</span><span>Model Evaluation</span>
+          <span>Semantic Search</span><span>LLM API Integrations</span>
+        </div>
       </section>
 
       <section className="ref-metrics reveal">
@@ -67,8 +76,8 @@ export default function HomePage() {
       </section>
 
       <section className="ref-cta reveal">
-        <h2>Need a strong full-stack engineer for your next product phase?</h2>
-        <p>I can contribute across architecture, implementation, and production delivery.</p>
+        <h2>Need a strong Full-Stack + AI engineer for your next product phase?</h2>
+        <p>I can contribute across architecture, implementation, GenAI integration, and production delivery.</p>
         <div className="ref-actions">
           <Link className="btn btn-solid" to="/contact">Talk to me</Link>
           <Link className="btn btn-outline" to="/experience">See experience</Link>

@@ -40,7 +40,8 @@ export default function Header() {
       </nav>
       <div className="header-cta">
         <button className="theme-toggle" type="button" aria-label="Toggle day and night mode">
-          Day
+          <span className="theme-icon" aria-hidden="true">☀️</span>
+          <span className="theme-label">Day</span>
         </button>
         <Link className="header-btn" to="/contact">
           Hire Me

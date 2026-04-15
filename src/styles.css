@@ -9,8 +9,8 @@
   --cool: #42d3ff;
   --mint: #38d8b8;
   --shadow: 0 30px 60px rgba(1, 8, 18, 0.45);
-  --nav-bg: rgba(8, 22, 40, 0.72);
-  --nav-border: rgba(141, 197, 255, 0.16);
+  --nav-bg: linear-gradient(120deg, rgba(8, 24, 44, 0.92), rgba(10, 37, 61, 0.86));
+  --nav-border: rgba(141, 197, 255, 0.2);
   --nav-link: #a8bddc;
   --nav-link-hover: #ffffff;
   --nav-link-active: #ffffff;
@@ -30,8 +30,8 @@ body[data-theme="light"] {
   --text: #161b22;
   --muted: #4f5964;
   --shadow: 0 16px 34px rgba(17, 22, 30, 0.1);
-  --nav-bg: rgba(245, 239, 227, 0.9);
-  --nav-border: rgba(60, 67, 78, 0.15);
+  --nav-bg: linear-gradient(120deg, rgba(252, 247, 238, 0.96), rgba(239, 231, 216, 0.94));
+  --nav-border: rgba(60, 67, 78, 0.2);
   --nav-link: #525c68;
   --nav-link-hover: #14181f;
   --nav-link-active: #14181f;
@@ -109,6 +109,11 @@ body[data-theme="light"] {
   position: sticky;
   top: 0.8rem;
   z-index: 10;
+  box-shadow: 0 14px 28px rgba(3, 10, 20, 0.26);
+}
+
+body[data-theme="light"] .site-header {
+  box-shadow: 0 12px 24px rgba(56, 41, 22, 0.12);
 }
 
 .logo {
@@ -232,6 +237,19 @@ body[data-theme="light"] .logo-mark {
   font-weight: 700;
   font-size: 0.85rem;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.theme-icon {
+  font-size: 0.92rem;
+  line-height: 1;
+  display: none;
+}
+
+.theme-label {
+  line-height: 1;
 }
 
 .ref-main {
@@ -944,6 +962,14 @@ body[data-theme="light"] .project-card a:hover {
   align-items: center;
   gap: 0.45rem;
   min-height: 52px;
+  cursor: pointer;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-3px) scale(1.02);
+  border-color: rgba(255, 209, 143, 0.52);
+  box-shadow: 0 16px 30px rgba(5, 12, 25, 0.28);
 }
 
 .skill-item img {
@@ -962,6 +988,11 @@ body[data-theme="light"] .project-card a:hover {
 body[data-theme="light"] .skill-item {
   border-color: rgba(28, 36, 46, 0.16);
   background: rgba(255, 255, 255, 0.62);
+}
+
+body[data-theme="light"] .skill-item:hover {
+  border-color: rgba(24, 63, 87, 0.35);
+  box-shadow: 0 12px 22px rgba(26, 52, 72, 0.16);
 }
 
 body[data-theme="light"] .skill-item span {
@@ -1255,6 +1286,10 @@ body[data-theme="light"] .footer-links a:hover {
     padding-bottom: 0.52rem;
   }
 
+  body[data-theme="light"] .main-nav a.active {
+    background: rgba(222, 153, 46, 0.16);
+  }
+
   .grid-two {
     grid-template-columns: 1fr;
   }
@@ -1341,6 +1376,16 @@ body[data-theme="light"] .footer-links a:hover {
   .theme-toggle {
     padding: 0.38rem 0.55rem;
     font-size: 0.78rem;
+    min-width: 38px;
+    justify-content: center;
+  }
+
+  .theme-icon {
+    display: inline-block;
+  }
+
+  .theme-label {
+    display: none;
   }
 
   .ref-metrics {

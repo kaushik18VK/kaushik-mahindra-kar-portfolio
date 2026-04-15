@@ -21,10 +21,10 @@ export default function ExperiencePage() {
             <div className="timeline-top"><p>Oracle America, Inc</p><span>02/2025 - Present</span></div>
             <h3>Software Development Engineer 2</h3>
             <ul>
-              <li>Reduced API latency by 40% (850ms to 510ms) for core systems.</li>
-              <li>Built event-driven pipelines processing ~1.5K events/sec.</li>
-              <li>Improved uptime to 99.99% with cloud-native microservice migration.</li>
-              <li>Delivered frontend performance optimization with major load-time cuts.</li>
+              <li>Reduced critical API latency by 40% (850 ms to 510 ms) by profiling bottlenecks and refactoring high-traffic service paths.</li>
+              <li>Engineered event-driven processing pipelines handling ~1,500 events/sec with stable throughput under production load.</li>
+              <li>Led cloud-native microservice migration to OCI and Kubernetes, improving service availability to 99.99%.</li>
+              <li>Optimized React UI rendering and payload strategy to significantly improve perceived load performance on key user workflows.</li>
             </ul>
             <div className="mini-tech-grid"><span>Java</span><span>Spring Boot</span><span>Kafka</span><span>OCI</span><span>Kubernetes</span><span>ReactJS</span><span>WebSockets</span><span>Jenkins</span></div>
           </article>
@@ -33,10 +33,10 @@ export default function ExperiencePage() {
             <div className="timeline-top"><p>Cylogic</p><span>07/2022 - 07/2023</span></div>
             <h3>Software Engineer</h3>
             <ul>
-              <li>Modernized backend and frontend systems with React/Angular + Spring.</li>
-              <li>Integrated 15+ APIs and improved response latency by 25%.</li>
-              <li>Reduced infra costs by 20% with containerized deployments.</li>
-              <li>Mentored 12+ engineers and improved sprint throughput by 30%.</li>
+              <li>Modernized legacy backend and frontend modules into scalable React/Angular + Spring architecture with cleaner service boundaries.</li>
+              <li>Integrated 15+ internal and third-party APIs, improving overall response latency by 25% through async handling and caching strategy.</li>
+              <li>Reduced infrastructure cost by 20% by introducing Docker/Kubernetes-based deployment standardization.</li>
+              <li>Mentored 12+ engineers on delivery practices and code quality, increasing sprint throughput by 30%.</li>
             </ul>
             <div className="mini-tech-grid"><span>ReactJS</span><span>Angular</span><span>FastAPI</span><span>Spring Boot</span><span>Docker</span><span>Kubernetes</span><span>AWS</span><span>JWT/OAuth2</span></div>
           </article>
@@ -45,10 +45,10 @@ export default function ExperiencePage() {
             <div className="timeline-top"><p>NXP Net Solution (Paytm)</p><span>06/2020 - 07/2022</span></div>
             <h3>Software Engineer</h3>
             <ul>
-              <li>Scaled throughput from 15K TPS to 21K TPS in fintech systems.</li>
-              <li>Supported 1M+ daily financial operations with lower p95 latency.</li>
-              <li>Automated CI/CD, cutting release cycle from 2 weeks to 3 days.</li>
-              <li>Improved observability and reduced MTTR by 60%.</li>
+              <li>Scaled fintech transaction throughput from 15K TPS to 21K TPS through service optimization and resilient event-stream handling.</li>
+              <li>Supported 1M+ daily financial operations while lowering p95 latency for critical payment flows.</li>
+              <li>Automated CI/CD delivery pipelines, reducing release cycle time from 2 weeks to 3 days.</li>
+              <li>Strengthened observability using centralized logging and metrics, reducing MTTR by 60% for production incidents.</li>
             </ul>
             <div className="mini-tech-grid"><span>Java</span><span>Spring WebFlux</span><span>Kafka</span><span>CI/CD</span><span>GitHub Actions</span><span>ELK</span><span>Prometheus</span><span>Microservices</span></div>
           </article>
