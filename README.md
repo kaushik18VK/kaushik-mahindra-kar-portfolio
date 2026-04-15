@@ -14,6 +14,8 @@ Modern multi-page portfolio built with React, Vite, and React Router.
 ```bash
 cd /Users/kaushik/Desktop/Portfolio
 npm install
+cp .env.example .env
+# set VITE_FORMSPREE_ENDPOINT in .env
 npm run dev
 ```
 
@@ -42,3 +44,4 @@ npm run preview
 - Day/Night mode with local storage persistence
 - Animated counters, reveal effects, tilt cards, particle background
 - Recruiter-focused sections for experience, projects, and skills
+- Contact form with Formspree integration
