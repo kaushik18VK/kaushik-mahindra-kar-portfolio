@@ -1,21 +1,42 @@
-import { Link, NavLink } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <header className="site-header">
       <Link to="/" className="logo">
-        <span className="logo-mark">KMK</span>
+        <span className="logo-mark">KM</span>
         <span className="logo-name">Kaushik Mahindra Kar</span>
       </Link>
-      <nav className="main-nav">
-        <NavLink to="/" end>
+      <button
+        className={`nav-toggle ${menuOpen ? 'open' : ''}`}
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded={menuOpen}
+        onClick={() => setMenuOpen((prev) => !prev)}
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+      <nav className={`main-nav ${menuOpen ? 'open' : ''}`}>
+        <NavLink to="/" end onClick={closeMenu}>
           Home
         </NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/experience">Experience</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/skills">Skills</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/about" onClick={closeMenu}>About</NavLink>
+        <NavLink to="/experience" onClick={closeMenu}>Experience</NavLink>
+        <NavLink to="/projects" onClick={closeMenu}>Projects</NavLink>
+        <NavLink to="/skills" onClick={closeMenu}>Skills</NavLink>
+        <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
       </nav>
       <div className="header-cta">
         <button className="theme-toggle" type="button" aria-label="Toggle day and night mode">
