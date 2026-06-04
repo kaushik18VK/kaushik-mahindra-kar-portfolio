@@ -18,7 +18,7 @@ export default function HomePage() {
             </div>
             <div className="ref-facts">
               <span><i />Open to Full-Stack and AI roles</span>
-              <span>Based in San Jose, California</span>
+              <span>Based in Dubai, UAE</span>
               <span>Response within 24h</span>
             </div>
           </div>

@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-compact">
-        <p className="footer-identity">Kaushik Mahindra Kar · Software Development Engineer · San Jose, California</p>
+        <p className="footer-identity">Kaushik Mahindra Kar · Software Development Engineer · Dubai, UAE</p>
         <nav className="footer-links" aria-label="Footer links">
           <a href="mailto:kaushikm1155@gmail.com" aria-label="Email">
             <svg className="footer-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7 8-5H4l8 5zm0 2-8-5v8h16V9l-8 5z"/></svg>
